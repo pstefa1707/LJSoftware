@@ -316,4 +316,5 @@ def get_local_ip():
     return ret
 
 if __name__ == '__main__':
+    assert websockets.__version__ == '10.2', 'incorrect websockets pip package version - things may break! use pip install websockets==10.2'
     run_server(get_local_ip())
